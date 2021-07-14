@@ -536,6 +536,8 @@ footer {
     grid-template-columns: repeat(1, 1fr);
     position: relative;
     gap: 40px;
+    width: 100%;
+    overflow: hidden;
   }
   .content.left-area {
     display: flex;
