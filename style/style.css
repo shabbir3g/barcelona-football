@@ -53,6 +53,12 @@ img {
 a {
   text-decoration: none;
 }
+.mobile-menu {
+  display: none;
+}
+.mobile-menu i {
+  color: #fff;
+}
 /* Header Area Style  */
 
 header {
@@ -118,14 +124,11 @@ nav.main-menu ul li a {
   color: #ffffff;
   background-color: #e02c6d;
   width: 123px;
-  height: 44px;
-  padding: 10px 24px;
+  padding: 14px 24px;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-}
-.banner-right img {
-  width: 556px;
+  display: inline-block;
 }
 
 /* player details style  */
@@ -409,4 +412,186 @@ footer {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+  text-align: center;
+}
+
+/* Responsive CSS Style  */
+
+@media screen and (min-width: 689px) and (max-width: 992px) {
+  .mobile-menu {
+    display: block;
+  }
+  .main-menu {
+    display: none;
+  }
+  .header-top {
+    width: 100%;
+  }
+  .header-banner {
+    width: 100%;
+  }
+  .banner-left {
+    width: 50%;
+    margin-right: 5%;
+  }
+  .banner-right {
+    width: 45%;
+  }
+  section.container {
+    width: 90%;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .players {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .highlights-left {
+    width: 50%;
+    margin-right: 5%;
+  }
+  .highlights-right {
+    width: 45%;
+  }
+  .gallery-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 688px) {
+  .header-top {
+    width: 100%;
+  }
+  .header-banner {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 0;
+    margin-top: 46px;
+  }
+  .banner-left h1 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .banner-left {
+    width: 100%;
+    margin-right: 0;
+  }
+  .banner-right {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .banner-right img {
+    width: 319px;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+  .main-menu {
+    display: none;
+  }
+
+  section.container {
+    width: 90%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .players {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+  }
+
+  .highlights-area {
+    margin-top: 0;
+    flex-direction: column;
+  }
+  .highlights-left h1 {
+    font-size: 30px;
+    line-height: 40px;
+    color: #0a0826;
+    margin-bottom: 8px;
+  }
+  .highlights-left {
+    width: 80%;
+    margin-right: 0;
+  }
+  .highlights-left p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 0;
+  }
+
+  .highlights-left a {
+    margin-bottom: 29px;
+  }
+  .highlights-right {
+    width: 80%;
+  }
+  .latest-result {
+    grid-template-columns: repeat(1, 1fr);
+    position: relative;
+    gap: 40px;
+  }
+  .content.left-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    position: relative;
+    top: 50%;
+  }
+  .content.right-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    justify-content: space-between;
+  }
+  .single-result .team-banner {
+    position: absolute;
+    top: 60px;
+    bottom: inherit;
+    margin: auto;
+    width: 120px;
+    left: 0;
+    right: 0;
+  }
+  .single-result.result-left .team-banner {
+    right: 0;
+  }
+  .single-result .content .final-result {
+    font-size: 30px;
+  }
+  .team-name {
+    font-size: 30px;
+  }
+  .single-result.result-left::before,
+  .single-result.result-left::after,
+  .single-result.result-right::before,
+  .single-result.result-right::after {
+    display: none;
+  }
+
+  .gallery-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .barcelona-logo {
+    width: 275px;
+  }
+  .single-gallery {
+    height: 240px;
+  }
 }
