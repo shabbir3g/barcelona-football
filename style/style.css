@@ -17,7 +17,32 @@ section.container {
   width: 1050px;
   margin-top: 70px;
 }
-
+.section-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+  color: #000;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0;
+  margin-bottom: 31px;
+}
+.section-title::before {
+  background: #999999;
+  width: 100%;
+}
+.section-title::after {
+  background: #e02c6d;
+  width: 50%;
+}
+.section-title::after,
+.section-title::before {
+  height: 4px;
+  left: 0;
+  position: absolute;
+  content: "";
+  bottom: -14px;
+}
 ul {
   margin: 0;
   list-style: none;
@@ -165,6 +190,181 @@ article.player {
   width: 567px;
 }
 
+/* Latest Result Style  */
+
+.latest-result {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  gap: 40px;
+}
+.single-result {
+  position: relative;
+  background-image: url(../images//single-bg.jpg);
+  background-size: cover;
+  float: left;
+  height: 251px;
+  width: 100%;
+  padding: 75px 43px 30px;
+  z-index: 1;
+  overflow: hidden;
+}
+.single-result.result-left::before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: "";
+  border-bottom: 412px solid transparent;
+  border-right: 183px solid #e02c6d;
+  z-index: -1;
+}
+.single-result.result-left::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: "";
+  border-bottom: 418px solid transparent;
+  border-right: 186px solid #ffffff;
+  z-index: -2;
+}
+.single-result.result-right::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  border-bottom: 412px solid transparent;
+  border-left: 183px solid #e02c6d;
+  z-index: -1;
+}
+.single-result.result-right::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  border-bottom: 418px solid transparent;
+  border-left: 186px solid #ffffff;
+  z-index: -2;
+}
+.single-result .content .final-result {
+  font-size: 50px;
+  letter-spacing: 0.8px;
+  font-weight: 900;
+  color: #ffffff;
+  opacity: 1;
+  line-height: 36px;
+}
+.result-left,
+.result-right {
+  width: 91%;
+}
+.single-result .team-banner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 120px;
+}
+.single-result.result-left .team-banner {
+  right: 55px;
+}
+.latest-result .vs {
+  position: absolute;
+  left: 49.5%;
+  top: 50%;
+  width: 80px;
+  height: 80px;
+  margin-left: -40px;
+  margin-top: -40px;
+  border: 5px solid #ffffff;
+  background-color: #e02c6d;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 68px;
+  z-index: 9;
+}
+.team-name {
+  color: #fff;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.content.left-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.content.right-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Match Gallery style  */
+.gallery-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.single-gallery {
+  margin: 0 0 29px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  height: 245px;
+}
+
+.gallery-items .single-gallery::before {
+  bottom: -139px;
+  right: 0;
+}
+.gallery-items .single-gallery::before {
+  content: "";
+  width: 0;
+  height: 0;
+  background: #000;
+  opacity: 0.6;
+  position: absolute;
+  transform: skewY(140deg);
+  -webkit-transform: skewY(140deg);
+  -ms-transform: skewY(140deg);
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -ms-transition: 0.4s;
+}
+.gallery-items .single-gallery::after {
+  top: -139px;
+  left: 0;
+}
+.gallery-items .single-gallery::after {
+  content: "";
+  width: 0;
+  height: 0;
+  background: #000;
+  opacity: 0.6;
+  position: absolute;
+  transform: skewY(140deg);
+  -webkit-transform: skewY(140deg);
+  -ms-transform: skewY(140deg);
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -ms-transition: 0.4s;
+}
+
+.gallery-items .single-gallery:hover::before {
+  width: 240px;
+  height: 240px;
+}
+
+.gallery-items .single-gallery:hover::after {
+  width: 240px;
+  height: 240px;
+}
+.single-gallery img {
+  cursor: pointer;
+}
+
 /* Footer Area style  */
 
 footer {
@@ -172,7 +372,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 158px;
+  margin-top: 100px;
 }
 .barcelona-logo {
   width: 483px;
