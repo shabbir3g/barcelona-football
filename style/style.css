@@ -59,6 +59,20 @@ a {
 .mobile-menu i {
   color: #fff;
 }
+.watch-link {
+  color: #ffffff;
+  background-color: #e02c6d;
+  padding: 14px 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: inline-block;
+  transition: letter-spacing 0.3s ease-in, opacity 0.3s;
+}
+.watch-link:hover {
+  letter-spacing: 0.1em;
+  opacity: 0.8;
+}
 /* Header Area Style  */
 
 header {
@@ -120,16 +134,6 @@ nav.main-menu ul li a {
   line-height: 80px;
   color: #ffffff;
 }
-.banner-left a {
-  color: #ffffff;
-  background-color: #e02c6d;
-  width: 123px;
-  padding: 14px 24px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  display: inline-block;
-}
 
 /* player details style  */
 
@@ -178,17 +182,7 @@ article.player {
   line-height: 60px;
   color: #0a0826;
 }
-.highlights-left a {
-  color: #ffffff;
-  background-color: #e02c6d;
-  width: 123px;
-  padding: 14px 24px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  margin-top: 8px;
-  display: inline-block;
-}
+
 .highlights-right {
   width: 567px;
 }
@@ -378,7 +372,7 @@ footer {
   margin-top: 100px;
 }
 .barcelona-logo {
-  width: 483px;
+  width: 400px;
   margin-bottom: 20px;
 }
 .social-media ul {
