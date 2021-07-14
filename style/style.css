@@ -1,0 +1,212 @@
+/* Google Fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+/* Common Style and Utilities  */
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.container {
+  width: 1050px;
+  margin-top: 70px;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+/* Header Area Style  */
+
+header {
+  background-color: #2d25a0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 52px;
+}
+.header-top {
+  width: 1164px;
+  display: flex;
+  justify-content: space-between;
+}
+nav.main-menu ul {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+nav.main-menu ul li {
+  margin-right: 36px;
+}
+nav.main-menu ul li a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.login-button a {
+  color: #ffffff;
+  background-color: #e02c6d;
+  width: 123px;
+  height: 44px;
+  padding: 10px 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.header-banner {
+  width: 1164px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 67px;
+  margin-bottom: 34px;
+}
+
+.banner-left {
+  width: 485px;
+  margin-right: 102px;
+}
+.banner-right {
+  width: 556px;
+}
+.banner-left h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 80px;
+  color: #ffffff;
+}
+.banner-left a {
+  color: #ffffff;
+  background-color: #e02c6d;
+  width: 123px;
+  height: 44px;
+  padding: 10px 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.banner-right img {
+  width: 556px;
+}
+
+/* player details style  */
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+article.player {
+  width: 300px;
+  height: 426px;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+}
+
+.player-details h2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  color: #18191f;
+}
+
+.player-details p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #6c6c6c;
+}
+
+/* Highlights Area style  */
+
+.highlights-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 95px;
+}
+.highlights-left {
+  width: 469px;
+  margin-right: 66px;
+}
+.highlights-left h1 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 60px;
+  color: #0a0826;
+}
+.highlights-left a {
+  color: #ffffff;
+  background-color: #e02c6d;
+  width: 123px;
+  padding: 14px 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 8px;
+  display: inline-block;
+}
+.highlights-right {
+  width: 567px;
+}
+
+/* Footer Area style  */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 158px;
+}
+.barcelona-logo {
+  width: 483px;
+  margin-bottom: 20px;
+}
+.social-media ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media ul li {
+  margin-right: 14px;
+}
+
+.social-media ul li a i {
+  width: 32px;
+  height: 32px;
+  color: #969bab;
+  background: rgba(10, 10, 20, 0.1);
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 7px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.copyright-text {
+  margin-top: 20px;
+}
+
+.copyright-text p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
